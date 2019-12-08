@@ -1,0 +1,155 @@
+command_not_found_handle() {
+	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+}
+
+animation() {
+red="\033[31m"
+yellow="\033[33m"
+green="\033[32m"
+blue="\033[34m"
+ungu="\033[35m"
+wr36="\033[36m"
+wr37="\033[37m"
+
+S="\033[s"
+U="\033[u"
+POS="\033[1000D\033[1C"
+while [ : ]
+do
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ \ \ \ \ ${red}\t${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ \ \ \ ${red}\t${green}\h${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ ${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.9
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${red}\t${green}\h${yellow}\e${wr36}\f${ungu}\o${blue}\x${wr37}\@${red}\a${green}\z${yellow}\u${wr36}\b${ungu}\i${blue}\r${wr37}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${green}\t${yellow}\h${wr36}\e${ungu}\f${blue}\o${wr37}\x${red}\@${green}\a${yellow}\z${wr36}\u${ungu}\b${blue}\i${wr37}r${red}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${yellow}\t${wr36}\h${ungu}\e${blue}\f${wr37}\o${red}\x${green}\@${yellow}\a${wr36}\z${ungu}\u${blue}\b${wr37}\i${red}\r${green}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${wr36}\t${ungu}\h${blue}\e${wr37}\f${red}\o${green}\x${yellow}\@${wr36}a${ungu}\z${blue}\u${wr37}\b${red}\i${green}\r${yellow}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${ungu}\t${blue}\h${wr37}\e${red}\f${green}\o${yellow}\x${wr36}\@${ungu}\a${blue}\z${wr37}\u${red}\b${green}\i${yellow}\r${wr36}\s${U}'
+    sleep 0.1
+    eval echo -ne '${S}${POS}${blue}\t${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s${U}'
+    sleep 0.5
+    eval echo -ne '${S}${POS}${wr37}\h${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${red}\e${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${green}\f${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${yellow}\o${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${wr36}\x${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${ungu}\@${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${blue}\a${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${wr37}\z${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${red}\u${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${green}\b${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${yellow}\i${wr36}\r${ungu}\s\ \ \ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${wr36}\r${ungu}\s\ \ \ \ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}${ungu}\s\ \ \ \ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.3
+    eval echo -ne '${S}${POS}\ \ \ \ \ \ \ \ \ \ \ \ \ ${U}'
+    sleep 0.5
+
+
+done
+}
+PS1='\[\e[5;33m\]Koreksi: $(if
+[[ $? == 0 ]];
+then echo "\[\e[32m\]SUKSES";
+else echo "\[\e[31m\]ERROR!";
+fi)\[\e[5;34m\] \W\[\e[37m\]
+                '
+animation&
